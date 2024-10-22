@@ -1,0 +1,767 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+/*Define el margen de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*es el texto de todo el documento*/
+
+body {
+  font-family: "Sansita", sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #ffffea,#ffffff); /* Degradado de arriba a abajo */
+  min-height: 100vh; /* Asegúrate de que el fondo cubra toda la altura de la ventana */
+  /*background-image: linear-gradient(#ffc3cc ,#1faaaf41,#f164796e  ); /*sirve para hacer degradados*/
+}
+
+/*INICIO DE MENU VERTICAL
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width:120px ;
+    background-color:rgba(255, 255, 255, 0.5);
+} /* coloca el despligue del menu en negro
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+} /*pone el menu en bloque
+
+.menu-vertical li a {
+    display: block;
+    color: rgb(209, 206, 206);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+} */
+
+/*INICIO DE MENU horizontal*/
+
+.menu h1{
+    font-size: 10px;
+}
+
+.menu-item{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-item.active{
+    color: red;
+    font-weight: bold;
+}
+.menu {
+    
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.menu.colored {
+    background-color: #F0BA32; /* color que prefieras */
+}
+
+
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    left: 123vh;
+   
+}
+
+.menu-horizontal >li> a{
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+    background-color: white;
+} /* marca las opciones con color*/
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+} /* manda el texto a la izquierda*/
+
+.menu .navbar ul li a {
+    font-size: 95%;
+    padding: 20px 22px ;
+    color: black;
+    font-weight: 100;
+
+} /* coloca el texto de la barra de navegacion en blanco, y tambien pone el contenido en bloque*/
+
+
+/*Inician las modificaciones de la cabecera dela pag*/
+.header {
+    text-align: center;
+}
+
+.header{
+    background-image: url(images/colors.png);
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 50vh;
+    align-items: center;
+} 
+
+.header-content {     
+
+ background-position: center bottom;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 50vh;
+ padding: 90px ;
+ align-items: center;
+
+} 
+
+.header-content h1{
+    font-size: 75px;
+    color: #263238;
+    text-transform: uppercase;
+    text-align: center;
+} /* tamaño del texto */
+
+
+.header-content p{
+    font-size: 16px;
+    color :#263238;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+/*Segunda parte de la pagina*/
+
+/*modificaciones del parrafo*/
+/*.eslogan-txt{
+   /*espacio del bloque
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+    top: -0px;
+    right: 35%;
+    padding-left: 40%;
+    font-size: 20px;
+    font-weight: 100;
+     color: #323337;
+}*/
+
+.eslogan-txt {
+    position: relative; /* Ajusta la posición si es necesario */
+    top: -40px;
+    padding-left: 20px; /* Espacio entre el texto y el borde izquierdo */
+    font-size: 20px;
+    font-weight: 100; /* Texto sin negritas */
+    color: #323337; /* Color del texto */
+    width: auto; /* Asegura que el ancho se ajuste al contenido */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1.5; /* Espaciado entre las líneas del texto */
+    
+}
+
+
+.eslogan-txt{
+    width: 10 ;
+    height: 10px;
+   
+}
+
+/*Modificaciones del desplazamiento de la img*/
+.container-eslogan{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 10px rgb(255, 255, 255);
+    padding: 60px ;
+
+}
+
+.container-eslogan img{
+    width: 30%;
+    height: auto;
+    transition: 3s;
+    border-radius: 20px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(38,200,146); /* Opcional: agrega sombra a la imagen */
+}
+
+.container-eslogan img:hover {
+    transform: translateY(-10%);
+    filter: brightness(90%);
+}
+
+/*Inicio de la tercera parte*/
+
+/*modificacion del bloque*/
+.Paquetes-content .txt-p{
+    font-size: 17px;
+    color: #414247;
+    padding: 0 150px 0px 22px;
+    margin-bottom: 6px;   
+}
+
+.Paquetes-content {
+    margin-top: 37px; /* Espacio entre este div y el bloque de la imagen */
+    padding: 26px 38px; /* Espacio interno del div respecto a los bordes */
+    background: linear-gradient(to bottom, #FFFFFF, #34d1a579); /* Opcional: agrega un color de fondo para visualizar el espacio */
+    border-radius: 80px; /* Opcional: bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(29, 28, 28, 0.1); /* Sombra para darle un efecto flotante */
+}
+
+.Paquetes-content h2 {
+    margin: -7px 0 26px -59px; /* Espacio debajo del h2 */
+    padding: 0 90px; /* Separación interna del h2 respecto a los bordes */
+    font-size: 28px; /* Tamaño del h2 */
+    color: #333; /* Color del texto */
+}
+
+
+/*Creacion del carrusel*/
+
+.slide {
+    
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    /*box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);*/
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px; /* Cambia el tamaño máximo según tus necesidades */
+    margin: 51px auto ;
+    overflow: hidden;
+    
+}
+.slide-inner {
+    position: relative;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    text-align: center;
+}
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 87%;
+    margin: 4px auto;
+    width: 64%;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    left: 94%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-6:checked ~ .control-6,
+#slide-7:checked ~ .control-7 {
+    display: block;
+}
+
+
+.slide-indicador {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    justify-content: center;
+    height: 20px;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+}
+
+.slide-circulo {
+    color: #d3a8a8;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.slide-indicador li.active .slide-circulo {
+    color: #c3ca62; /* Cambia el color del indicador activo */
+    transform: scale(1.5); /* Aumenta el tamaño cuando es activo */
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+     li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+     li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-4 ~ .slide-indicador 
+     li:nth-child(4) .slide-circulo,
+#slide-5:checked ~ .control-5 ~ .slide-indicador 
+     li:nth-child(5) .slide-circulo,
+#slide-6:checked ~ .control-6 ~ .slide-indicador 
+     li:nth-child(6) .slide-circulo,
+#slide-7:checked ~ .control-7 ~ .slide-indicador 
+     li:nth-child(7) .slide-circulo {
+    color:   #FF00FF;
+}
+
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+/*Fin del carousel*/
+
+/*Boton debajo del carousel*/
+
+.info-button {
+     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+     max-width: 800px; /* Cambia el tamaño máximo según tus necesidades */
+     margin:0 46% auto ;
+    margin-top: 10px; /* Espacio entre el carrusel y el botón */
+    padding: 12px 25px; /* Ajusta el tamaño del botón */
+    background-color: #15B0B5; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 27px; /* Bordes redondeados del botón */
+    text-align: center;
+}
+
+.info-button:hover {
+    background-color: #F0BA32; /* Color al pasar el mouse */
+}
+
+/*fin de los botones*/
+
+
+/*Cuarta parte de la pagina*/
+
+.container-imprenta {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 130px 0px 130px 10px;
+    margin-left: -207px;
+  
+}
+
+.container-imprenta img {
+    width: 30%; 
+    height: 350px; 
+    /*border: 2px solid #000;  Cambia el grosor y el color según sea necesario */
+    border-radius: 20px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra a la imagen */
+}
+
+.container-imprenta h2 {
+    white-space: nowrap;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    left: 60%; 
+    top: -170px; /*este mas position:relative nos ayuda a mover cosas hacia abjo*/
+}
+
+.container-imprenta .txt-p {
+    flex-grow: 1;
+    text-align:justify;
+    padding-left: 30px;
+    font-size: 16px;
+    max-width: 100%; /* Limitar el ancho del párrafo */
+    margin: 11px 93px -10px -10px;
+    line-height: 1.7;
+
+}
+
+/*Inicio del forms*/
+
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: 0.2s;
+    color: #aaa;    
+}
+.slide-indicador li label {
+    position: unset;
+    transition: 0.2s;
+    color: #aaa;
+    height: 0px;
+    line-height: 6px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+}
+
+input:focus, textarea:focus{
+    border-color: #007bff;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown)+ label,
+textarea:not(:placeholder-shown)+ label{
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.form{
+    margin: 20px 0px 46px 32px; /*40px*/
+    padding: 3rem 1.5rem;
+    background-color: #f8cccc;
+    width:min(530px, 90%); /*350px*/
+    border-radius: 10px;
+}
+
+.form_title{
+    font-size: 2rem;
+}
+
+.form_subtitle{
+    margin-top: 1.7rem;
+    color: #9c9999;
+    padding: 0px 0px 26px;
+}
+
+/*Fin del forms*/
+
+/* Redes sociales*/
+ footer{
+    background-color: #fadcf0ea;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+ }
+ 
+.social-bar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -72px;
+    padding: 100px ;
+}
+
+.social-bar a{
+    margin: 0 10px;
+}
+
+.social-bar img{
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-bar img:hover {
+    transform: scale(1.1);
+}
+
+/*MAPA*/
+
+.mapa{
+width: 45%;
+position: relative;
+top: 5px;
+right: 20vh;
+
+}
+
+.mapa h2{
+    padding: 10px;
+    font-size: 500;
+}
+.container-p{
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+
+/*footer Start*/
+
+.container-footer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+.footer-content{
+    width: 33.3%;
+}
+
+.container-footer h3{
+    font-size: 15px;
+    margin-bottom: 9px;
+    text-align: center;
+    width: 370px;
+}
+
+.footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    font-size: 13px;
+}
+
+
+.list{
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    font-size: 13px;
+}
+
+.list li::before{
+    content: '';
+    position:absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.list li:hover::before{
+    width: 70px;
+}
+
+/* Derechos de autor*/
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+.social-icons i:hover{
+    color:#f1ef6e;
+}
+
+.bottom-bar{
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar{
+    color: #343434;
+    margin: 0;
+    font-size: 10px;
+    padding: 17px;
+}
+
+/*PAGINA DE SERVICIOS*/
+
+.title h1{
+    margin: 25px;
+    color: #000;
+    font-weight: 100; 
+    font-size: 45px;
+    position: relative;
+    left: 97px;
+}
+
+/*Insercion de imagenes*/
+.service1{
+    background-image: url(images/Services/etiquetas.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.service2{
+    background-image: url(images/Services/corte.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.service3{
+    background-image: url(images/Services/impresiones.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.service4{
+    background-image: url(images/Services/laminado.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.service5{
+    background-image: url(images/Services/offset.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.service6{
+    background-image: url(images/Services/personalizacion.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.service7{
+    background-image: url(images/Services/social.png);
+    margin-left: auto;
+    margin-right: 226px;
+    margin-block: auto;
+    align-items: center;
+    border-radius: 23px;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*flecha de los links*/
+.arrow{
+    font-size: xxx-large;
+    background-color: white;
+    width: 41px;
+    height: 63px;
+    border-radius: 42px;
+    margin-left: auto;
+    margin-right: 26px;
+    padding: 0px 0px 39px 14px;
+    margin-block: auto;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+/*COLOR DE LOS ENLACES DE LA BARRA DE MENU*/
+.bg-yellow{
+    background-color: #F0BA32;
+}
+
