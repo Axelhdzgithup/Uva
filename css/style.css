@@ -112,7 +112,7 @@ body {
 }
 
 .header{
-    background-image: url(images/colors.png);
+    background-image: url(/images/colors.png);
     background-position: center bottom;
     background-size: cover;
     min-height: 50vh;
